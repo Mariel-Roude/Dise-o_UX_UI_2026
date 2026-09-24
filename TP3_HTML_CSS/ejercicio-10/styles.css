@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #1f2937; }
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+  min-height: 100vh;
+}
+.encabezado    { grid-area: header;  background: #1f4e79; color: #fff; padding: 1rem 1.5rem; }
+.barra-lateral { grid-area: sidebar; background: #e2e8f0; padding: 1rem 1.5rem; }
+.contenido     { grid-area: main;    padding: 1rem 1.5rem; }
+.pie           { grid-area: footer;  background: #0f2a44; color: #fff; padding: 1rem 1.5rem; }
+.encabezado h1, .pie p { margin: 0; }

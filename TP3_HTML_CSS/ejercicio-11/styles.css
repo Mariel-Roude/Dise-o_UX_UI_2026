@@ -1,0 +1,16 @@
+body { font-family: system-ui, sans-serif; max-width: 500px; margin: 2rem auto; padding: 0 1rem; color: #1f2937; }
+h1 { color: #1f4e79; }
+.enlaces { list-style: none; padding: 0; }
+.enlaces li { border-radius: 6px; }
+.enlaces li:nth-child(odd)  { background: #f1f5f9; }   /* pseudo-clase 1 */
+.enlaces li:nth-child(even) { background: #e2e8f0; }
+.enlaces a {
+  display: block;
+  padding: .75rem 1rem;
+  color: #1e3a8a;
+  text-decoration: none;
+  transition: padding-left .2s, background .2s;
+}
+.enlaces a::before { content: "➜"; margin-right: .6rem; color: #b45309; }  /* pseudo-elemento */
+.enlaces a:hover, .enlaces a:focus-visible { background: #1f4e79; color: #fff; padding-left: 1.5rem; } /* pseudo-clase 2 */
+.enlaces li:last-child a { font-weight: bold; }        /* pseudo-clase 3 */

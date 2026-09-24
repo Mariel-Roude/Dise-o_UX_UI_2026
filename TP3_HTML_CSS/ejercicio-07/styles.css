@@ -1,0 +1,13 @@
+body { font-family: system-ui, sans-serif; margin: 0; padding: 1rem; color: #1f2937; }
+h1 { color: #1f4e79; }
+.fila { display: flex; }
+.card {
+  box-sizing: border-box;        /* el ancho incluye padding y borde */
+  width: calc(100% / 3);         /* tres tarjetas iguales */
+  margin: 0 8px;                 /* separación externa */
+  padding: 20px;                 /* espacio interno */
+  border: 4px solid #1f4e79;     /* borde */
+  border-radius: 8px;
+  background: #eff6ff;
+}
+.card h2 { margin-top: 0; }

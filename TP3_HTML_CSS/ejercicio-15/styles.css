@@ -1,0 +1,35 @@
+/* Enfoque MOBILE FIRST: se parte del diseño más simple (una columna) y se agrega
+   complejidad con min-width. Se eligió porque el sitio se usa mucho en celulares,
+   carga menos CSS en pantallas chicas y evita tener que "deshacer" estilos. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #1f2937; }
+
+/* Base: menos de 768px -> una sola columna, sin sidebar */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
+}
+.encabezado    { grid-area: header; background: #1f4e79; color: #fff; padding: 1rem; }
+.barra-lateral { display: none; grid-area: sidebar; background: #e2e8f0; padding: 1rem 1.5rem; }
+.contenido     { grid-area: main; padding: 1rem; }
+.pie           { grid-area: footer; background: #0f2a44; color: #fff; padding: 1rem; }
+.encabezado h1, .pie p { margin: 0; }
+
+/* Breakpoint 1: desde 768px aparece el sidebar */
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: 200px minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .barra-lateral { display: block; }
+  .contenido { padding: 1.5rem; }
+}
+
+/* Breakpoint 2: pantallas grandes -> sidebar más ancho y contenido centrado */
+@media (min-width: 1100px) {
+  .layout { grid-template-columns: 280px minmax(0, 1fr); }
+  .contenido { padding: 2rem 3rem; max-width: 900px; }
+}

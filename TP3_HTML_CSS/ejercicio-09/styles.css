@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; padding: 1.5rem; color: #1f2937; }
+h1 { color: #1f4e79; }
+.galeria { display: flex; flex-wrap: wrap; gap: 1rem; }
+.producto {
+  flex: 1 1 250px;      /* base 250px, crece y se reordena al achicar la ventana */
+  max-width: 400px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.producto img { width: 100%; height: auto; border-radius: 4px; }
+.producto h2 { font-size: 1.1rem; margin: .5rem 0 0; }
+.precio { font-weight: bold; color: #166534; }
+button { background: #1f4e79; color: #fff; border: 0; padding: .6rem 1.2rem; border-radius: 4px; cursor: pointer; }
+button:hover { background: #163a5c; }

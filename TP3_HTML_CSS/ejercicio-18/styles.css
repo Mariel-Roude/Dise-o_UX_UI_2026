@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; padding: 1.5rem; color: #1f2937; }
+h1 { color: #1f4e79; }
+.mosaico {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;      /* rellena huecos con los elementos siguientes */
+  gap: 10px;
+}
+.mosaico figure { margin: 0; overflow: hidden; border-radius: 8px; }
+.mosaico img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+.mosaico figure:hover img { transform: scale(1.06); }
+
+/* Elementos de tamaños desiguales */
+.mosaico figure:nth-child(1) { grid-column: span 2; grid-row: span 2; }  /* 2 columnas x 2 filas */
+.mosaico figure:nth-child(4) { grid-column: span 2; }
+.mosaico figure:nth-child(6) { grid-row: span 2; }
+.mosaico figure:nth-child(9) { grid-column: span 2; grid-row: span 2; }
+
+/* Variedad visual con la misma imagen */
+.mosaico figure:nth-child(3n) img { filter: hue-rotate(90deg); }
+.mosaico figure:nth-child(3n+1) img { filter: hue-rotate(200deg); }
+.mosaico figure:nth-child(5n) img { filter: grayscale(.8); }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 12 - Posicionamiento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id="inicio">Posicionamiento</h1>
+    <p>Pasá el mouse (o enfocá con Tab) sobre <span class="tooltip-contenedor" tabindex="0">este texto<span class="tooltip" role="tooltip">Soy un tooltip con position: absolute</span></span> para ver el tooltip.</p>
+    <p>Párrafo de relleno 1. Este texto se agrega únicamente para generar suficiente contenido y poder ver el comportamiento del botón "volver arriba" al hacer scroll por la página.</p>
+    <p>Párrafo de relleno 2. El elemento con <code>position: fixed</code> permanece siempre visible en la esquina inferior derecha de la pantalla, sin importar cuánto se desplace el contenido.</p>
+    <p>Párrafo de relleno 3. Al hacer scroll hacia abajo se puede comprobar que el botón no se mueve junto con el resto de los párrafos, ya que su posición se calcula respecto a la ventana.</p>
+    <p>Párrafo de relleno 4. El tooltip, en cambio, usa <code>position: absolute</code> respecto de su contenedor, que tiene <code>position: relative</code>.</p>
+    <p>Párrafo de relleno 5. Esto permite que el tooltip aparezca justo encima del texto sobre el que se posiciona el mouse o el foco del teclado.</p>
+    <p>Párrafo de relleno 6. El uso de <code>z-index</code> asegura que el tooltip se muestre por encima del resto del contenido de la página.</p>
+    <p>Párrafo de relleno 7. Estos párrafos no aportan información relevante en sí mismos; su único propósito es alargar la página para poder probar el scroll.</p>
+    <p>Párrafo de relleno 8. Al llegar al final de la página se puede usar el botón "volver arriba" para regresar al encabezado con un desplazamiento suave.</p>
+  </main>
+  <a href="#inicio" class="volver-arriba" aria-label="Volver arriba">↑</a>
+</body>
+</html>

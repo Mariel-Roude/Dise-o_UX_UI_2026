@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NubeStudio - Landing page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#inicio">Nube<span>Studio</span></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-contenido">
+        <h1>Tu idea, publicada en la web</h1>
+        <p>Diseñamos y desarrollamos sitios rápidos, accesibles y hechos a medida para emprendimientos.</p>
+        <a class="btn" href="#contacto">Pedir presupuesto</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="seccion">
+      <h2>Servicios</h2>
+      <div class="grid-servicios">
+        <article class="servicio"><h3>Diseño web</h3><p>Interfaces claras, pensadas para que tus clientes encuentren todo rápido.</p></article>
+        <article class="servicio"><h3>Tiendas online</h3><p>Catálogo, carrito y medios de pago listos para vender.</p></article>
+        <article class="servicio"><h3>Mantenimiento</h3><p>Actualizaciones, copias de seguridad y soporte mensual.</p></article>
+        <article class="servicio"><h3>Accesibilidad</h3><p>Auditoría y mejoras para que cualquier persona pueda usar tu sitio.</p></article>
+        <article class="servicio"><h3>Optimización</h3><p>Carga veloz en celulares y buena posición en buscadores.</p></article>
+        <article class="servicio"><h3>Capacitación</h3><p>Te enseñamos a editar tu propio contenido sin depender de nadie.</p></article>
+      </div>
+    </section>
+
+    <section id="testimonios" class="seccion alterna">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="carrusel" tabindex="0" role="region" aria-label="Testimonios">
+        <figure class="testimonio"><blockquote><p>Renovaron nuestra web en dos semanas y las consultas se duplicaron.</p></blockquote><figcaption>Lucía, panadería Trigo</figcaption></figure>
+        <figure class="testimonio"><blockquote><p>Muy claros con los plazos y los precios. Recomendables.</p></blockquote><figcaption>Martín, estudio contable</figcaption></figure>
+        <figure class="testimonio"><blockquote><p>Mi tienda ahora carga rápido incluso con datos móviles.</p></blockquote><figcaption>Carla, indumentaria Río</figcaption></figure>
+        <figure class="testimonio"><blockquote><p>Nos enseñaron a actualizar el sitio nosotros mismos.</p></blockquote><figcaption>Diego, club de remo</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <form action="#" method="post" class="formulario">
+        <div class="campo"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" autocomplete="name" required></div>
+        <div class="campo"><label for="email">Correo electrónico</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+        <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" required></textarea></div>
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 NubeStudio. Proyecto integrador de Diseño UX-UI.</p>
+    <a href="#inicio">Volver arriba</a>
+  </footer>
+</body>
+</html>

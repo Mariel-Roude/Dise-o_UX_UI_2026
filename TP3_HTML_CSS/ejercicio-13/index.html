@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 13 - Formulario estilizado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Contacto</h1>
+    <form action="#" method="post">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+      </div>
+      <div class="campo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" minlength="10" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>

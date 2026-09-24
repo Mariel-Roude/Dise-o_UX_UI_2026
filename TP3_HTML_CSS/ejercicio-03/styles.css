@@ -1,0 +1,8 @@
+body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 900px; padding: 0 1rem; color: #1f2937; }
+h1 { color: #1f4e79; }
+table { border-collapse: collapse; width: 100%; }
+caption { font-weight: bold; padding: .5rem; }
+th, td { border: 1px solid #94a3b8; padding: .6rem; text-align: center; }
+thead th { background: #1f4e79; color: #fff; }
+tbody th { background: #e2e8f0; }
+tfoot td { background: #f1f5f9; font-style: italic; }

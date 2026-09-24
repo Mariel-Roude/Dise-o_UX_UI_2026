@@ -1,0 +1,20 @@
+/* 1. Selector de etiqueta (especificidad 0-0-1) */
+body { font-family: system-ui, sans-serif; background: #f8fafc; color: #1f2937; margin: 0; padding: 2rem; }
+h1 { color: #1f4e79; }
+
+/* 2. Selector de clase (0-1-0) */
+.card { background: #fff; border: 2px solid #94a3b8; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+
+/* 3. Selector descendiente (0-1-1) */
+.card p { margin: 0; color: #334155; }
+
+/* 4. Selector descendiente compuesto (0-2-1) */
+.card p .resaltado { background: #fef08a; padding: 0 .25rem; }
+
+/* 5. Selector de ID (1-0-0): gana sobre las clases */
+#destacada { border-color: #b91c1c; background: #fef2f2; }
+#destacada .resaltado { background: #fecaca; font-weight: bold; }
+
+/* 6. Selector hijo directo */
+.aviso > p { color: #14532d; border-left: 4px solid #16a34a; padding-left: .75rem; }
+.aviso .resaltado { text-decoration: underline; }

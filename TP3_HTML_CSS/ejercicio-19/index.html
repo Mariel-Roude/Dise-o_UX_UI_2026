@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 19 - Formulario multi-step</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Registro</h1>
+    <form action="#" method="post" class="registro">
+      <input type="radio" name="paso" id="p1" class="paso-radio" checked>
+      <input type="radio" name="paso" id="p2" class="paso-radio">
+
+      <div class="indicador" aria-hidden="true">
+        <span class="i1">Paso 1: Cuenta</span><span class="i2">Paso 2: Perfil</span>
+      </div>
+
+      <fieldset class="paso paso1">
+        <legend>Datos de la cuenta</legend>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder=" " required minlength="3">
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder=" " required>
+        </div>
+        <div class="campo">
+          <label for="clave">Contraseña (mínimo 8 caracteres)</label>
+          <input type="password" id="clave" name="clave" placeholder=" " required minlength="8">
+        </div>
+        <label for="p2" class="btn siguiente">Siguiente</label>
+      </fieldset>
+
+      <fieldset class="paso paso2">
+        <legend>Datos del perfil</legend>
+        <div class="campo">
+          <label for="tel">Teléfono (solo números, 8 a 12 dígitos)</label>
+          <input type="tel" id="tel" name="tel" placeholder=" " required pattern="[0-9]{8,12}">
+        </div>
+        <div class="campo">
+          <label for="pais">País</label>
+          <select id="pais" name="pais" required>
+            <option value="">Elegí una opción</option>
+            <option>Argentina</option><option>Uruguay</option><option>Chile</option><option>Otro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label><input type="checkbox" name="terminos" required> Acepto los términos y condiciones</label>
+        </div>
+        <label for="p1" class="btn volver">Volver</label>
+        <button type="submit" class="btn enviar">Registrarme</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
