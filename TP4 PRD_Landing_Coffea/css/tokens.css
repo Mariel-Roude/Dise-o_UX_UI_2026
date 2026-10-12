@@ -1,0 +1,78 @@
+/* ==========================================================================
+   tokens.css — Design tokens de Coffea (PRD sección 4)
+   Única fuente de verdad: colores, tipografías, escala, radios y espaciados.
+   Orden de capas (se declara una sola vez, acá, porque este archivo carga primero).
+   ========================================================================== */
+@layer tokens, base, layout, components, utilities;
+
+@layer tokens {
+  :root {
+    /* ---- Colores (extraídos del Figma) ---- */
+    --color-espresso: #30261c;
+    --color-maroon: #2a0000;
+    --color-sand: #e2d9c8;
+    --color-sand-20: rgba(226, 217, 200, 0.2);
+    --color-sand-40: rgba(226, 217, 200, 0.4);
+    --color-bg: #f1f0ee;
+    --color-muted: #544a3e;
+    --color-border-soft: rgba(48, 38, 28, 0.1);
+    --color-text-soft: rgba(48, 38, 28, 0.7);
+    --color-white: #ffffff;
+    --color-star: #ffa800;
+    /* Tokens auxiliares (no existen en el Figma pero evitan valores sueltos) */
+    --color-black: #000000;
+    --color-star-off: #d3cfc8;
+    --color-overlay: rgba(20, 14, 8, 0.55);
+    --color-overlay-soft: rgba(20, 14, 8, 0.2);
+    --color-shadow: rgba(48, 38, 28, 0.18);
+    --color-error: #b3261e;
+
+    /* ---- Tipografía (Google Fonts, font-display: swap) ---- */
+    --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+    --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-ui: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-accent: "Reggae One", "Playfair Display", Georgia, serif;
+
+    /* ---- Escala tipográfica (valores desktop = Figma; fluidos hacia abajo) ---- */
+    --fs-hero: clamp(2.5rem, 1.5rem + 3.5vw, 4.5rem); /* 72 / 82 */
+    --lh-hero: 1.14;
+    --fs-h2: clamp(1.5rem, 1.25rem + 1vw, 2rem); /* 32 */
+    --tracking-h2: 0.04em; /* 1.28px sobre 32px */
+    --fs-cta: clamp(1.75rem, 1.3rem + 1.7vw, 2.5rem); /* 40 / 50 */
+    --lh-cta: 1.25;
+    --fs-card-title-base: 1.75rem; /* 28: título de card en mobile */
+    --fs-card-title: 2.375rem; /* 38 (se ajusta al ancho de la card, ver product-card.css) */
+    --fs-logo: clamp(1.5rem, 1.3rem + 0.8vw, 2rem); /* 32 */
+    --fs-footer-h: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem); /* 24 */
+    --fs-lg: 1.25rem; /* 20 */
+    --fs-md: 1.125rem; /* 18 */
+    --fs-base: 1rem; /* 16 */
+    --fs-sm: 0.875rem; /* 14 */
+    --fs-xs: 0.75rem; /* 12 / 20 */
+
+    /* ---- Forma y espacio ---- */
+    --radius-pill: 100px;
+    --radius-card: 18px;
+    --radius-img: 12px;
+    --radius-btn: 8px;
+    --radius-round: 50%; /* círculos: buscar, avatar, flechas, corazón */
+    --radius-xs: 2px; /* barras del menú hamburguesa */
+    --container: 1444px;
+    --gutter: 1rem; /* 16 — base. Se redefine en md y lg (layout.css) */
+
+    --space-4: 0.25rem;
+    --space-8: 0.5rem;
+    --space-12: 0.75rem;
+    --space-16: 1rem;
+    --space-24: 1.5rem;
+    --space-28: 1.75rem;
+    --space-40: 2.5rem;
+    --space-56: 3.5rem;
+    --space-64: 4rem; /* separación título → carrusel (PRD 5.4 R1) */
+
+    /* ---- Interacción ---- */
+    --ease: 200ms ease;
+    --touch: 2.75rem; /* 44px: área táctil mínima */
+    --card-height-xl: 570px; /* alto de product-card en el Figma (PRD 5.4 R2) */
+  }
+}

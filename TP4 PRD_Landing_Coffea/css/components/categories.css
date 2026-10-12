@@ -1,0 +1,80 @@
+/* categories.css — PRD 5.3 */
+@layer components {
+  .categories {
+    padding-block: var(--space-40);
+    background: var(--color-sand);
+  }
+  .categories__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-24) var(--space-16);
+    max-width: 845px;
+    margin-inline: auto;
+  }
+  .categories__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    min-height: var(--touch);
+    padding: var(--space-8);
+    color: var(--color-muted);
+    font-size: var(--fs-md);
+    font-weight: 500;
+    text-align: center;
+    transition: color var(--ease);
+  }
+  /* Íconos SVG inline (sprite en index.html): heredan el color del texto con currentColor.
+     --iw / --ih = tamaño del ícono en el Figma; --s = escala. Se centran en una caja de 82 × 82. */
+  .categories__icon {
+    --s: 0.78; /* escala mobile */
+    width: calc(var(--iw) * var(--s) * 1px);
+    height: calc(var(--ih) * var(--s) * 1px);
+    margin-block: calc((82 - var(--ih)) * var(--s) / 2 * 1px);
+    fill: currentColor;
+  }
+  .categories__icon--hot {
+    --iw: 72.5;
+    --ih: 67;
+  }
+  .categories__icon--cold {
+    --iw: 55;
+    --ih: 64;
+  }
+  .categories__icon--cup {
+    --iw: 61.5;
+    --ih: 60.5;
+  }
+  .categories__icon--dessert {
+    --iw: 69;
+    --ih: 62;
+  }
+  @media (hover: hover) {
+    .categories__link:hover {
+      color: var(--color-espresso);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .categories__list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .categories {
+      display: grid;
+      align-items: center;
+      min-height: 220px;
+      padding-block: 0;
+    }
+    .categories__list {
+      display: flex;
+      justify-content: space-between;
+      width: min(845px, 100%);
+    }
+    .categories__icon {
+      --s: 1;
+    }
+  }
+}

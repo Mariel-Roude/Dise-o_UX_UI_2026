@@ -1,0 +1,115 @@
+/* hero.css — PRD 5.2 */
+@layer components {
+  .hero {
+    position: relative;
+    isolation: isolate;
+    padding-block: 8.5rem var(--space-56);
+    background: var(--color-espresso);
+    color: var(--color-white);
+    overflow: hidden;
+  }
+  .hero__media {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+  }
+  .hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 89% 50%; /* mobile: foco en la taza */
+  }
+  /* Overlay oscuro para garantizar contraste AA del texto */
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--color-overlay);
+  }
+
+  .hero__content {
+    max-width: 557px;
+  }
+  .hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--fs-lg);
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+  .hero__title {
+    margin-top: var(--space-24);
+    font-family: var(--font-display);
+    font-size: var(--fs-hero);
+    font-weight: 700;
+    line-height: var(--lh-hero);
+  }
+  .hero__text {
+    max-width: 431px;
+    margin-top: var(--space-24);
+    font-family: var(--font-body);
+    font-size: var(--fs-md);
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .hero__cta {
+    margin-top: var(--space-40);
+    min-height: var(--touch);
+    padding: var(--space-16) var(--space-40);
+    background: var(--color-white);
+    color: var(--color-espresso);
+    font-family: var(--font-body);
+    font-size: var(--fs-md);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  @media (hover: hover) {
+    .hero__cta:hover {
+      background: var(--color-sand);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      padding-block: 11rem var(--space-64);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero {
+      padding-block: 13.75rem 6rem;
+      min-height: clamp(44rem, 100vh, 62.5rem);
+    }
+    .hero__media img {
+      object-position: 50% 50%;
+    }
+    .hero::after {
+      background: linear-gradient(90deg, var(--color-overlay) 0%, var(--color-overlay-soft) 55%, transparent 80%);
+    }
+    .hero__title {
+      margin-top: var(--space-40);
+    }
+    .hero__text {
+      margin-top: var(--space-56);
+    }
+    .hero__cta {
+      margin-top: var(--space-56);
+    }
+  }
+
+  /* xl: medidas exactas del Figma a 1920 px */
+  @media (min-width: 1440px) {
+    .hero {
+      min-height: 62.5rem; /* 1000 px */
+      padding-top: 18.375rem; /* 294 px */
+    }
+  }
+}

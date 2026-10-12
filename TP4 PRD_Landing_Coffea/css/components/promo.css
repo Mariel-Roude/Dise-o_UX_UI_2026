@@ -1,0 +1,104 @@
+/* promo.css — CTA granos de café (PRD 5.6) */
+@layer components {
+  .promo {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    place-items: center;
+    min-height: 335px;
+    padding-block: var(--space-40);
+    overflow: hidden;
+    background: var(--color-sand);
+  }
+  .promo__content {
+    max-width: 372px;
+    text-align: center;
+  }
+  .promo__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-cta);
+    font-weight: 600;
+    line-height: var(--lh-cta);
+    color: var(--color-black);
+  }
+  .promo__cta {
+    min-width: 258px;
+    min-height: 51px;
+    margin-top: var(--space-24);
+    padding: var(--space-12) var(--space-24);
+    background: var(--color-espresso);
+    color: var(--color-bg);
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    font-weight: 500;
+  }
+  .promo__cta svg {
+    width: 20px;
+    height: 20px;
+  }
+  @media (hover: hover) {
+    .promo__cta:hover {
+      background: var(--color-maroon);
+    }
+  }
+
+  /* Imágenes decorativas laterales: ocultas en mobile */
+  .promo__img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 100%;
+  }
+  .promo__img img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+  }
+  .promo__img--left {
+    left: 0;
+  }
+  .promo__img--right {
+    right: 0;
+  }
+
+  @media (min-width: 768px) {
+    .promo__img--left {
+      display: block;
+      width: clamp(10rem, 24vw, 13rem);
+    }
+    .promo__img--left img {
+      object-fit: cover;
+      object-position: right bottom;
+      width: 100%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .promo {
+      grid-template-columns: 1fr minmax(0, 372px) 1fr;
+    }
+    .promo__content {
+      grid-column: 2;
+      text-align: left;
+    }
+    .promo__img--left {
+      width: clamp(18rem, 27vw, 520px);
+    }
+    .promo__img--right {
+      display: block;
+      width: clamp(14rem, 26vw, 503px);
+    }
+    .promo__img--right img {
+      width: 100%;
+      object-fit: cover;
+      object-position: left bottom;
+    }
+  }
+  @media (min-width: 1440px) {
+    .promo__content {
+      justify-self: start;
+      margin-left: 124px;
+    }
+  }
+}
