@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cubri Seguros · Contratación digital</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.1.0/dist/basecoat.cdn.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/tokens.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="min-h-screen pb-24 lg:pb-0">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-30 border-b border-[var(--border)] bg-white">
+    <div class="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-4 lg:px-6">
+      <a href="#" id="logo-home" class="flex items-center gap-2 text-xl font-bold text-[var(--primary)] cursor-pointer">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="8" fill="#4F46E5"/>
+          <path d="M14 5L6.5 7.8v5.3c0 4.1 3.1 7.9 7.5 8.9 4.4-1 7.5-4.8 7.5-8.9V7.8L14 5z" fill="white"/>
+        </svg>
+        Cubri
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-[var(--muted)] md:flex">
+        <a href="#" class="hover:text-[var(--text)]">Seguros</a>
+        <a href="#" class="hover:text-[var(--text)]">Siniestros</a>
+        <a href="#" class="hover:text-[var(--text)]">Ayuda</a>
+        <a href="#" class="rounded-full border border-[var(--border)] px-4 py-1.5 text-[var(--text)] hover:bg-gray-50">Mi cuenta</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- OVERFLOW-X-HIDDEN Y W-FULL -->
+  <main class="mx-auto max-w-[1280px] px-4 py-6 lg:px-6 lg:py-8 w-full overflow-x-hidden">
+
+    <!-- STEPPER GLOBAL -->
+    <div id="stepper-global" class="mb-6 lg:mb-8 w-full"></div>
+
+    <!-- PANTALLA 01 · INICIO -->
+    <section data-paso="0" hidden>
+      <div class="grid gap-8 lg:gap-12 lg:grid-cols-2 lg:items-center min-w-0">
+        <div class="min-w-0">
+          <p class="text-xs font-bold uppercase tracking-wide text-[var(--success)]">Primer mes con 20% OFF</p>
+          <h1 class="mt-4 text-3xl font-extrabold leading-[1.1] text-[var(--text)] lg:text-[56px]">
+            Protegé lo que más usás en menos de 3 minutos
+          </h1>
+          <p class="mt-4 lg:mt-6 max-w-lg text-sm lg:text-[15px] leading-relaxed text-[var(--muted)]">
+            Elegí qué querés asegurar, cotizá al instante y contratá 100% online. Sin papeleo ni llamadas.
+          </p>
+          <button id="btn-empezar" class="btn mt-6 lg:mt-8 w-full rounded-xl bg-[var(--primary)] py-4 lg:py-3 text-base font-semibold text-white hover:bg-[var(--primary-700)] lg:w-auto lg:px-8">Cotizar ahora</button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 lg:gap-4 min-w-0">
+          <button id="producto-celular" class="card group flex flex-col items-start gap-3 rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-5 text-left transition hover:border-[var(--primary)] min-w-0">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <div class="min-w-0">
+              <h3 class="font-bold text-sm lg:text-base text-[var(--text)]">Celular</h3>
+              <p class="text-[10px] lg:text-xs text-[var(--muted)]">Robo, rotura y pérdida</p>
+            </div>
+            <p class="text-xs lg:text-sm font-semibold text-[var(--primary)]">desde $2.000/mes</p>
+          </button>
+
+          <div class="card flex flex-col items-start gap-3 rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-5 opacity-70 min-w-0">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="min-w-0">
+              <h3 class="font-bold text-sm lg:text-base text-[var(--text)]">Hogar</h3>
+              <p class="text-[10px] lg:text-xs text-[var(--muted)]">Incendio y robo</p>
+            </div>
+            <p class="text-xs lg:text-sm font-semibold text-[var(--primary)]">desde $5.500/mes</p>
+          </div>
+
+          <div class="card flex flex-col items-start gap-3 rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-5 opacity-70 min-w-0">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2"/></svg>
+            </div>
+            <div class="min-w-0">
+              <h3 class="font-bold text-sm lg:text-base text-[var(--text)]">Bicicleta</h3>
+              <p class="text-[10px] lg:text-xs text-[var(--muted)]">Robo total</p>
+            </div>
+            <p class="text-xs lg:text-sm font-semibold text-[var(--primary)]">desde $1.800/mes</p>
+          </div>
+
+          <div class="card flex flex-col items-start gap-3 rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-5 opacity-70 min-w-0">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+            <div class="min-w-0">
+              <h3 class="font-bold text-sm lg:text-base text-[var(--text)]">Viaje</h3>
+              <p class="text-[10px] lg:text-xs text-[var(--muted)]">Asistencia al viajero</p>
+            </div>
+            <p class="text-xs lg:text-sm font-semibold text-[var(--primary)]">desde $900/día</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 lg:mt-16 grid gap-3 lg:gap-4 sm:grid-cols-3 min-w-0">
+        <div class="card rounded-xl border border-[var(--border)] bg-white p-4 lg:p-5 text-xs lg:text-sm min-w-0">
+          <strong class="mb-1 block text-[var(--text)]">100% online</strong>
+          <span class="text-[var(--muted)]">Cotizás y contratás desde la web</span>
+        </div>
+        <div class="card rounded-xl border border-[var(--border)] bg-white p-4 lg:p-5 text-xs lg:text-sm min-w-0">
+          <strong class="mb-1 block text-[var(--text)]">Póliza al instante</strong>
+          <span class="text-[var(--muted)]">La recibís por email al confirmar</span>
+        </div>
+        <div class="card rounded-xl border border-[var(--border)] bg-white p-4 lg:p-5 text-xs lg:text-sm min-w-0">
+          <strong class="mb-1 block text-[var(--text)]">Sin permanencia</strong>
+          <span class="text-[var(--muted)]">Cancelás cuando quieras</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANTALLA 02 · COTIZAR -->
+    <section data-paso="1" hidden>
+      <div class="mb-6 flex items-center justify-between lg:mb-8 min-w-0">
+        <div class="min-w-0">
+          <p class="text-xs font-semibold text-[var(--primary)]">Seguro de Celular</p>
+          <h2 class="mt-1 text-2xl font-extrabold lg:text-3xl">Contanos sobre tu celular</h2>
+        </div>
+        <button class="btn text-[var(--primary)] lg:hidden shrink-0" data-variant="ghost" data-volver="0">← Volver</button>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-[1fr_420px] min-w-0">
+        <form id="form-cotizar" class="card rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-8 min-w-0" novalidate>
+          <div class="grid gap-5 sm:grid-cols-2 min-w-0">
+            
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="marca">Marca</label>
+              <div class="relative mt-1.5 min-w-0">
+                <select id="marca" class="block w-full min-w-0 appearance-none rounded-lg border border-[var(--border)] bg-white px-3 py-2.5 pr-8 text-sm text-[var(--text)] focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]" name="marca">
+                  <option value="">Seleccioná una marca</option>
+                  <option value="Samsung">Samsung</option>
+                  <option value="Apple">Apple</option>
+                  <option value="Motorola">Motorola</option>
+                  <option value="Xiaomi">Xiaomi</option>
+                  <option value="Otro">Otro</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-[var(--muted)]">
+                  <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+              </div>
+              <p id="marca-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+              
+              <div id="marca-otro-container" class="mt-2 min-w-0" hidden>
+                <input id="marca-otro" type="text" class="block w-full min-w-0 rounded-lg border border-[var(--border)] px-3 py-2.5 text-sm focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)]" placeholder="Escribí la marca" />
+                <p id="marca-otro-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+              </div>
+            </div>
+
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="modelo">Modelo</label>
+              <input id="modelo" type="text" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)] py-2.5 px-3" placeholder="Ej.: Galaxy A55" />
+              <p id="modelo-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="valor">Valor del equipo</label>
+              <input id="valor" type="text" inputmode="numeric" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)] py-2.5 px-3" placeholder="$ 600.000" />
+              <p id="valor-help" class="mt-1 text-[11px] text-[var(--muted)]">Entre $100.000 y $2.500.000</p>
+              <p id="valor-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+
+            <fieldset class="field min-w-0" role="group">
+              <legend class="text-sm font-semibold">Antigüedad</legend>
+              <div class="mt-2 flex flex-wrap lg:flex-nowrap gap-2 min-w-0">
+                <label class="cursor-pointer whitespace-nowrap rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-medium has-checked:border-[var(--primary)] has-checked:bg-[var(--primary-50)] has-checked:text-[var(--primary)]">
+                  <input type="radio" name="antiguedad" value="menos1" class="sr-only" /> Menos de 1 año
+                </label>
+                <label class="cursor-pointer whitespace-nowrap rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-medium has-checked:border-[var(--primary)] has-checked:bg-[var(--primary-50)] has-checked:text-[var(--primary)]">
+                  <input type="radio" name="antiguedad" value="1a2" class="sr-only" /> 1 a 2 años
+                </label>
+                <label class="cursor-pointer whitespace-nowrap rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-medium has-checked:border-[var(--primary)] has-checked:bg-[var(--primary-50)] has-checked:text-[var(--primary)]">
+                  <input type="radio" name="antiguedad" value="mas2" class="sr-only" /> +2 años
+                </label>
+              </div>
+              <p id="antiguedad-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </fieldset>
+          </div>
+
+          <div class="mt-8 flex justify-between items-center border-t border-[var(--border)] pt-6 min-w-0">
+            <button type="button" class="btn hidden lg:block rounded-xl border border-[var(--primary)] text-[var(--primary)] px-8 py-2.5 shrink-0" data-variant="outline" data-volver="0">Volver</button>
+            <button id="btn-ver-planes" type="submit" class="btn w-full lg:w-auto rounded-xl bg-[var(--primary)] py-3 px-8 text-base font-semibold text-white disabled:bg-gray-200 disabled:text-gray-400 ml-auto min-w-0" disabled>Ver planes</button>
+          </div>
+        </form>
+
+        <aside class="hidden lg:block min-w-0">
+          <div id="resumen-paso1" class="card rounded-2xl border border-[var(--border)] bg-white p-6 text-sm min-w-0"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PANTALLA 03 · ELEGIR PLAN -->
+    <section data-paso="2" hidden>
+      <div class="mb-6 flex items-center justify-between lg:mb-8 min-w-0">
+        <div class="min-w-0">
+          <p class="text-xs font-semibold text-[var(--primary)]">Seguro de Celular</p>
+          <h2 class="mt-1 text-2xl font-extrabold lg:text-3xl">Elegí tu plan</h2>
+        </div>
+        <button class="btn text-[var(--primary)] lg:hidden shrink-0" data-variant="ghost" data-volver="1">← Volver</button>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-[1fr_420px] min-w-0">
+        <div class="card rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-8 min-w-0">
+          <div id="lista-planes" class="grid gap-4 lg:grid-cols-3 min-w-0"></div>
+          
+          <div class="hidden lg:flex justify-between mt-8 border-t border-[var(--border)] pt-6 min-w-0">
+            <button class="btn rounded-xl border border-[var(--primary)] text-[var(--primary)] px-8 py-2.5 shrink-0" data-variant="outline" data-volver="1">Volver</button>
+            <button id="btn-continuar-plan-desktop" class="btn rounded-xl bg-[var(--primary)] px-8 py-2.5 text-white shrink-0">Continuar</button>
+          </div>
+        </div>
+
+        <aside class="hidden lg:block min-w-0">
+          <div id="resumen-paso2" class="card rounded-2xl border border-[var(--border)] bg-white p-6 text-sm min-w-0"></div>
+        </aside>
+      </div>
+
+      <div id="barra-mobile-plan" class="fixed inset-x-0 bottom-0 z-20 border-t border-[var(--border)] bg-white p-4 lg:hidden">
+        <div class="flex items-center justify-between text-xs lg:text-sm mb-3 gap-2 min-w-0">
+          <span class="text-[var(--muted)] truncate">Plan Plus · Galaxy A55</span>
+          <strong id="total-mobile-plan" class="whitespace-nowrap shrink-0">$ 3.000/mes</strong>
+        </div>
+        <button class="btn w-full rounded-xl bg-[var(--primary)] py-3 text-white" id="btn-continuar-plan">Continuar</button>
+      </div>
+    </section>
+
+    <!-- PANTALLA 04 · DATOS PERSONALES -->
+    <section data-paso="3" hidden>
+      <div class="mb-6 flex items-center justify-between lg:mb-8 min-w-0">
+        <div class="min-w-0">
+          <p class="text-xs font-semibold text-[var(--primary)]">Seguro de Celular</p>
+          <h2 class="mt-1 text-2xl font-extrabold lg:text-3xl">Tus datos</h2>
+        </div>
+        <button class="btn text-[var(--primary)] lg:hidden shrink-0" data-variant="ghost" data-volver="2">← Volver</button>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-[1fr_420px] min-w-0">
+        <form id="form-datos" class="card rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-8 min-w-0" novalidate>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 min-w-0">
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="nombre">Nombre</label>
+              <input id="nombre" type="text" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" />
+              <p id="nombre-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="apellido">Apellido</label>
+              <input id="apellido" type="text" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" />
+              <p id="apellido-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="dni">DNI</label>
+              <input id="dni" type="text" inputmode="numeric" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" />
+              <p id="dni-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="nacimiento">Nacimiento</label>
+              
+              <input id="nacimiento" type="date" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" />
+              <p id="nacimiento-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="email">Email</label>
+              <input id="email" type="email" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" placeholder="juan.perez@gmail.com" />
+              <p id="email-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="celular">Celular</label>
+              <input id="celular" type="tel" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" placeholder="11 5555-1234" />
+              <p id="celular-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+          </div>
+
+          <div class="field mt-6 min-w-0" role="group">
+            <label class="flex items-start gap-2 text-sm cursor-pointer">
+              <input id="terminos" type="checkbox" class="mt-0.5 rounded border-gray-300 text-[var(--primary)] focus:ring-[var(--primary)] shrink-0" />
+              <span class="text-[var(--muted)]">Acepto los términos y condiciones y la política de privacidad.</span>
+            </label>
+            <p id="terminos-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+          </div>
+
+          <div class="mt-8 flex flex-col items-center justify-between border-t border-[var(--border)] pt-6 lg:flex-row min-w-0">
+            <button type="button" class="btn hidden lg:block rounded-xl border border-[var(--primary)] text-[var(--primary)] px-8 py-2.5 shrink-0" data-variant="outline" data-volver="2">Volver</button>
+            <p class="mb-3 text-xs text-[var(--muted)] lg:hidden">El botón se habilita cuando el formulario es válido</p>
+            <div class="flex w-full items-center gap-4 lg:w-auto min-w-0">
+              <span id="msg-faltan-datos" class="hidden text-xs text-[var(--muted)]">Completá los campos con error para continuar</span>
+              <button id="btn-ir-pago" type="submit" class="btn w-full rounded-xl bg-[var(--primary)] py-3 text-white disabled:bg-gray-300 disabled:text-gray-500 lg:w-auto lg:px-8 min-w-0" disabled>Continuar al pago</button>
+            </div>
+          </div>
+        </form>
+
+        <aside class="hidden lg:block min-w-0">
+          <div id="resumen-paso3" class="card rounded-2xl border border-[var(--border)] bg-white p-6 text-sm min-w-0"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PANTALLA 05 · PAGO -->
+    <section data-paso="4" hidden>
+      <div class="mb-6 flex items-center justify-between lg:mb-8 min-w-0">
+        <div class="min-w-0">
+          <p class="text-xs font-semibold text-[var(--primary)]">Seguro de Celular</p>
+          <h2 class="mt-1 text-2xl font-extrabold lg:text-3xl">Pago</h2>
+        </div>
+        <button class="btn text-[var(--primary)] lg:hidden shrink-0" data-variant="ghost" data-volver="3">← Volver</button>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-[1fr_420px] min-w-0">
+        <form id="form-pago" class="card rounded-2xl border border-[var(--border)] bg-white p-4 lg:p-8 min-w-0" novalidate>
+          
+          <div class="mb-6 rounded-xl bg-[var(--primary-50)] p-4 text-sm lg:hidden min-w-0">
+            <div class="flex justify-between py-1"><span class="text-[var(--muted)]">Seguro</span><span class="font-semibold">Celular · Plan Plus</span></div>
+            <div class="flex justify-between py-1"><span class="text-[var(--muted)]">Equipo</span><span class="font-semibold truncate ml-2">Samsung Galaxy A55</span></div>
+            <div class="mt-2 flex justify-between border-t border-[var(--primary-200)] pt-2 font-bold"><span>Total mensual</span><span>$ 3.000</span></div>
+          </div>
+
+          <div class="grid gap-3 sm:grid-cols-2 min-w-0">
+            <label class="flex cursor-pointer items-center gap-3 rounded-xl border border-[var(--border)] p-4 has-checked:border-[var(--primary)] has-checked:ring-1 has-checked:ring-[var(--primary)] min-w-0">
+              <input type="radio" name="metodo" value="credito" class="h-4 w-4 text-[var(--primary)] focus:ring-[var(--primary)] shrink-0" checked />
+              <span class="text-sm font-semibold text-[var(--text)]">Tarjeta de crédito</span>
+            </label>
+            <label class="flex cursor-pointer items-center gap-3 rounded-xl border border-[var(--border)] p-4 has-checked:border-[var(--primary)] has-checked:ring-1 has-checked:ring-[var(--primary)] min-w-0">
+              <input type="radio" name="metodo" value="debito" class="h-4 w-4 text-[var(--primary)] focus:ring-[var(--primary)] shrink-0" />
+              <span class="text-sm font-semibold text-[var(--text)]">Tarjeta de débito</span>
+            </label>
+          </div>
+
+          <div class="mt-6 grid gap-5 sm:grid-cols-2 min-w-0">
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="tarjeta">Número de tarjeta</label>
+              <input id="tarjeta" type="text" inputmode="numeric" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" placeholder="0000 0000 0000 0000" maxlength="19" />
+              <p id="tarjeta-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="titular-tarjeta">Titular</label>
+              <input id="titular-tarjeta" type="text" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" placeholder="Como figura en la tarjeta" />
+              <p id="titular-tarjeta-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="vencimiento">Vencimiento</label>
+              <input id="vencimiento" type="text" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" placeholder="MM/AA" maxlength="5" />
+              <p id="vencimiento-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+            <div class="field min-w-0" role="group">
+              <label class="text-sm font-semibold" for="cvv">CVV</label>
+              <input id="cvv" type="password" inputmode="numeric" class="input mt-1.5 w-full min-w-0 rounded-lg border-[var(--border)]" placeholder="123" maxlength="3" />
+              <p id="cvv-error" class="mt-1 text-xs text-[var(--error)]" role="alert" hidden></p>
+            </div>
+          </div>
+
+          <div class="alert mt-6 rounded-lg bg-[#FFFBEB] p-3 text-xs text-[#92400E] min-w-0">
+            Simulación: no se procesan pagos reales. 4111 1111 1111 1111 → aprobado · 4000 0000 0000 0002 → rechazado.
+          </div>
+
+          <div class="mt-8 flex flex-col items-center justify-between border-t border-[var(--border)] pt-6 lg:flex-row min-w-0">
+            <button type="button" class="btn hidden lg:block w-full rounded-xl border border-[var(--primary)] text-[var(--primary)] sm:w-auto px-8 py-2.5 shrink-0" data-variant="outline" data-volver="3">Volver</button>
+            <button id="btn-pagar" type="submit" class="btn w-full rounded-xl bg-[var(--primary)] py-3 text-white sm:w-auto lg:px-8 min-w-0">Pagar y contratar</button>
+          </div>
+        </form>
+
+        <aside class="hidden lg:block min-w-0">
+          <div id="resumen-paso4" class="card rounded-2xl border border-[var(--border)] bg-white p-6 text-sm min-w-0"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PANTALLA 06 · ÉXITO -->
+    <section data-paso="5" hidden>
+      <div class="mx-auto mt-6 lg:mt-10 max-w-xl min-w-0">
+        <div class="card rounded-2xl lg:rounded-3xl border border-[var(--border)] bg-white p-6 lg:p-10 text-center min-w-0">
+          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#ECFDF5] text-[var(--success)]">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2 class="mt-6 text-2xl font-extrabold lg:text-3xl">¡Listo, <span id="exito-nombre">Juan</span>!<br/>Tu celular ya está protegido</h2>
+          <p class="mt-3 text-sm text-[var(--muted)]">Te enviamos la póliza a <span id="exito-email" class="text-[var(--text)]">juan.perez@mail.com</span></p>
+
+          <div class="mt-6 inline-block rounded-lg bg-[var(--primary-50)] px-4 py-2 text-sm font-bold text-[var(--primary)]">
+            <span id="exito-poliza">POL-2026-000123</span>
+          </div>
+
+          <div class="mt-8 rounded-xl border border-[var(--border)] bg-[#F8FAFC] p-4 lg:p-5 text-left text-sm min-w-0">
+            <div class="flex justify-between py-1.5"><span class="text-[var(--muted)]">Plan</span><span class="font-semibold" id="exito-plan">Plus</span></div>
+            <div class="flex justify-between py-1.5"><span class="text-[var(--muted)]">Equipo</span><span class="font-semibold truncate ml-2" id="exito-equipo">Samsung Galaxy A55</span></div>
+            <div class="flex justify-between py-1.5"><span class="text-[var(--muted)]">Vigencia desde</span><span class="font-semibold" id="exito-vigencia">23/10/2026</span></div>
+            <div class="flex justify-between py-1.5"><span class="text-[var(--muted)]">Cuota mensual</span><span class="font-semibold" id="exito-cuota">$ 3.000</span></div>
+          </div>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row min-w-0">
+            <button id="btn-descargar-poliza" class="btn w-full rounded-xl bg-[var(--primary)] py-3 text-white sm:flex-1">Descargar póliza</button>
+            <button id="btn-volver-inicio-exito" class="btn w-full rounded-xl border border-[var(--primary)] py-3 text-[var(--primary)] sm:flex-1" data-variant="outline">Volver al inicio</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANTALLA 07 · ERROR -->
+    <section data-paso="6" hidden>
+      <div class="mx-auto mt-6 lg:mt-10 max-w-xl min-w-0">
+        <div class="card rounded-2xl lg:rounded-3xl border border-[var(--border)] bg-white p-6 lg:p-10 text-center min-w-0">
+          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#FEF2F2] text-[var(--error)]">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </div>
+          <h2 class="mt-6 text-2xl font-extrabold">No pudimos procesar el pago</h2>
+          <p class="mt-3 text-sm text-[var(--muted)]">La tarjeta fue rechazada. Revisá los datos o probá con otro medio de pago. Tus datos quedaron guardados.</p>
+
+          <div class="alert mt-6 rounded-lg bg-[#FFFBEB] p-3 text-xs text-[#92400E]">
+            Tarjeta de prueba que fuerza el error: 4000 0000 0000 0002
+          </div>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row min-w-0">
+            <button id="btn-reintentar-pago" class="btn w-full rounded-xl bg-[var(--primary)] py-3 text-white sm:flex-1">Reintentar pago</button>
+            <button id="btn-cambiar-medio" class="btn w-full rounded-xl border border-[var(--primary)] py-3 text-[var(--primary)] sm:flex-1" data-variant="outline">Cambiar medio de pago</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

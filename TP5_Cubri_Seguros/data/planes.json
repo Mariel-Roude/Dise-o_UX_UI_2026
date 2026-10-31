@@ -1,0 +1,33 @@
+[
+  {
+    "id": "basico",
+    "nombre": "Básico",
+    "tasaAnual": 0.04,
+    "coberturas": [
+      { "texto": "Robo con violencia", "incluye": true },
+      { "texto": "Rotura de pantalla", "incluye": false },
+      { "texto": "Hurto / pérdida", "incluye": false }
+    ]
+  },
+  {
+    "id": "plus",
+    "nombre": "Plus",
+    "tasaAnual": 0.06,
+    "recomendado": true,
+    "coberturas": [
+      { "texto": "Robo con violencia", "incluye": true },
+      { "texto": "Rotura de pantalla", "incluye": true },
+      { "texto": "Hurto / pérdida", "incluye": false }
+    ]
+  },
+  {
+    "id": "premium",
+    "nombre": "Premium",
+    "tasaAnual": 0.09,
+    "coberturas": [
+      { "texto": "Robo + rotura total", "incluye": true },
+      { "texto": "Rotura de pantalla", "incluye": true },
+      { "texto": "Hurto / pérdida", "incluye": true }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+:root {
+  /* Colores exactos del Figma */
+  --primary:    #4F46E5;   /* Botón principal, bordes activos */
+  --primary-700:#3730A3;   /* Textos destacados */
+  --primary-50: #EEF2FF;   /* Fondo de selección */
+  --success:    #059669;   /* Pasos completos, tildes */
+  --error:      #DC2626;   /* Errores, cruces */
+  --text:       #0F172A;   /* Texto principal */
+  --muted:      #64748B;   /* Textos secundarios */
+  --border:     #E2E8F0;   /* Bordes de inputs y tarjetas */
+  --bg:         #F5F7FB;   /* Fondo general de la página */
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sobrescribir Basecoat */
+:root {
+  --background: var(--bg);
+  --foreground: var(--text);
+  --primary-foreground: #ffffff;
+  --radius: 0.5rem;
+}
+
+/* Animaciones suaves */
+.btn, .card, .field input, .field select {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Caja de íconos para el catálogo */
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-50);
+  color: var(--primary);
+}
