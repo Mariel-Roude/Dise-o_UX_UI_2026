@@ -4,7 +4,7 @@ Este es mi trabajo final para la materia Diseño UX/UI de la Licenciatura en Sis
 
 ## Enlaces del Proyecto
 - **Sitio en vivo (Netlify):** [https://mariel-roude-portfolio.netlify.app/](https://mariel-roude-portfolio.netlify.app/)
-- **Repositorio GitHub:** [https://github.com/Mariel-Roude/Dise-o_UX_UI_2026](https://github.com/Mariel-Roude/Dise-o_UX_UI_2026)
+- **Repositorio GitHub:** [https://github.com/Mariel-Roude/Dise-o_UX_UI_2026/tree/main/Trabajo_Final_UXUI_Portfolio_Web](https://github.com/Mariel-Roude/Dise-o_UX_UI_2026/tree/main/Trabajo_Final_UXUI_Portfolio_Web)
 - **Prototipo y Proceso UX (Figma):** [Ver diseño en Figma](https://www.figma.com/design/aKbkcuHAcsRi4Q0nJdB9VE/Portfolio-Web---Roude-Mariel?node-id=0-1&t=32a5RNeKTZhlVAnw-1)
 
 ## Stack Tecnológico
@@ -36,10 +36,17 @@ El sitio está desplegado en Netlify y conectado a este repositorio.
 ## Capturas del Proyecto
 
 **Vista Desktop:**
+
 ![Vista Desktop](capturas/desktop.png)
 
+<br>
+
 **Vista Mobile:**
+
 ![Vista Mobile](capturas/mobile.png)
 
+<br>
+
 **Reporte Lighthouse:**
+
 ![Reporte Lighthouse](capturas/lighthouse.png)
