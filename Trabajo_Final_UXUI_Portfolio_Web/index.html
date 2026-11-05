@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariel Roude — Estudiante de Sistemas de Información</title>
+    <meta name="description" content="Portfolio de Mariel Roude, estudiante de Sistemas de Información. Proyectos de desarrollo Front-end y diseño de interfaces.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mariel Roude — Estudiante de Sistemas de Información">
+    <meta property="og:description" content="Portfolio de Mariel Roude, estudiante de Sistemas de Información. Proyectos de desarrollo Front-end y diseño de interfaces.">
+    <meta property="og:image" content="https://tu-sitio.netlify.app/assets/og-image.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Metadatos y Favicon -->
+    <meta name="theme-color" content="#3d0a89">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%233d0a89%22>MR</text></svg>">
+    
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header class="header">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="#" class="logo" aria-label="Inicio">MR</a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#about" class="nav-link">Acerca de mí</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://github.com/Mariel-Roude" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Perfil de GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#24292e">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                
+                <a href="#contact" class="btn-primary btn-small">Ponte en contacto</a>
+                
+                <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO -->
+        <section id="hero" class="hero container">
+            <div class="hero-content">
+                <span class="badge">Disponible para nuevos proyectos</span>
+                <h1>Mariel Roude</h1>
+                <p class="hero-subtitle">Estudiante de Sistemas de Información</p>
+                <p class="hero-value">Transformo ideas en interfaces claras, accesibles y centradas en las personas.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">Ver proyectos</a>
+                    <a href="#contact" class="btn-secondary">Contacto</a>
+                    <span class="hero-location">Remoto (GMT-3)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MÉTRICAS -->
+        <section class="metrics container">
+            <div class="metric-card">
+                <span class="metric-number">4</span>
+                <span class="metric-label">Proyectos Académicos</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">3+</span>
+                <span class="metric-label">Años de Formación</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">2</span>
+                <span class="metric-label">Cursos Técnicos</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">100%</span>
+                <span class="metric-label">Aprendizaje Continuo</span>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="skills" class="section container">
+            <h2>Habilidades</h2>
+            <div class="grid-3">
+                <article class="skill-card">
+                    <h3>Diseño UX</h3>
+                    <p>Investigación de usuarios, arquitectura de información y prototipado para resolver problemas reales.</p>
+                    <ul class="tags">
+                        <li>Research</li><li>Wireframes</li><li>Prototipado</li><li>Testing</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Diseño UI</h3>
+                    <p>Creación de sistemas de diseño visuales, coherentes y accesibles.</p>
+                    <ul class="tags">
+                        <li>Figma</li><li>Design Systems</li><li>Tipografía</li><li>Color</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Front-end</h3>
+                    <p>Maquetación de interfaces responsivas y semánticas.</p>
+                    <ul class="tags">
+                        <li>HTML5</li><li>CSS3</li><li>Tailwind</li><li>JavaScript</li><li>Git</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="projects" class="section container">
+            <h2>Proyectos</h2>
+            <div class="grid-2">
+                <article class="project-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>App de Gestión de Turnos</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p>Diseño UX/UI de una aplicación móvil para la gestión de turnos en una veterinaria. Mini-sprint de 60 minutos enfocado en la resolución de problemas bajo presión.</p>
+                        <ul class="tags"><li>UX/UI</li><li>Figma</li></ul>
+                        <div class="project-actions">
+                            <a href="https://www.figma.com/design/djiwOm3ATAKL7xuHa5sd7p/App-Turno-Veterinaria" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto</a>
+                            <button class="project-link btn-link" onclick="abrirCasoEstudio('App de Gestión de Turnos', '<h3>El Problema</h3><p>Resolver la gestión de turnos para una veterinaria en un tiempo límite de 60 minutos, priorizando la rapidez para el dueño de la mascota.</p><h3>La Solución</h3><p>Diseñé un flujo simplificado de 4 pantallas en Figma (elegir servicio, horario, confirmar y éxito), aplicando jerarquía visual y usabilidad básica.</p><h3>Resultado</h3><p>Logré un prototipo funcional y claro bajo presión, demostrando que la simplicidad es clave para la experiencia de usuario.</p>')">Caso de estudio</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>OpenArt - Plataforma de NFTs</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p>Prototipo de alta fidelidad y flujo de tareas completo para una plataforma de compra de arte digital y NFTs, incluyendo checkout.</p>
+                        <ul class="tags"><li>UX Research</li><li>Prototipado</li><li>Figma</li></ul>
+                        <div class="project-actions">
+                            <a href="https://www.figma.com/design/MSHTBlzMbe04kJjvyiV3oE/Roude-Mariel-Alejandra---OpenArt---Prototipo-de-alto-nivel-para-testing-de-Usuarios" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto</a>
+                            <button class="project-link btn-link" onclick="abrirCasoEstudio('OpenArt - Plataforma de NFTs', '<h3>El Problema</h3><p>Diseñar una plataforma de compra de NFTs que sea fácil de usar y genere confianza en el usuario durante todo el proceso de pago.</p><h3>La Solución</h3><p>Mapeé el flujo completo de tareas (desde la búsqueda hasta el checkout) y diseñé un prototipo de alta fidelidad enfocado en la claridad de la información y la seguridad de la transacción.</p><h3>Resultado</h3><p>Obtuve un prototipo navegable listo para testing, con un flujo de compra lógico y sin fricciones.</p>')">Caso de estudio</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Coffea - Landing Page</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p>Maquetación de una landing page para una cafetería ficticia. Enfoque en HTML semántico, CSS puro (Flexbox/Grid) y diseño responsive sin JavaScript.</p>
+                        <ul class="tags"><li>HTML5</li><li>CSS3</li><li>Netlify</li></ul>
+                        <div class="project-actions">
+                            <a href="https://tp4-coffea-uxui.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto</a>
+                            <button class="project-link btn-link" onclick="abrirCasoEstudio('Coffea - Landing Page', '<h3>El Problema</h3><p>Replicar un diseño de Figma en código real sin usar frameworks (como Bootstrap), asegurando que sea responsive y accesible.</p><h3>La Solución</h3><p>Utilicé HTML5 semántico, CSS Grid para la estructura principal, Flexbox para los componentes internos y Media Queries para adaptarlo a móviles.</p><h3>Resultado</h3><p>Logré una landing page 100% funcional y responsiva, demostrando dominio de CSS puro y buenas prácticas de maquetación.</p>')">Caso de estudio</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card featured">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Cubri Seguros - Checkout</h3>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <p>Desarrollo front-end interactivo de un flujo de contratación de seguros de 7 pantallas con lógica de validación y cálculo de precios.</p>
+                        <ul class="tags"><li>JavaScript</li><li>Tailwind</li><li>Lógica</li></ul>
+                        <div class="project-actions">
+                            <a href="https://cubri-seguros-tp.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto</a>
+                            <button class="project-link btn-link" onclick="document.getElementById('modal-cubri').showModal()">Caso de estudio</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA Y FORMACIÓN -->
+        <section id="experience" class="section container">
+            <h2>Formación y Experiencia</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="timeline-date">2024 - Presente</span>
+                    <div class="timeline-content">
+                        <h3>Licenciatura en Sistemas de Información</h3>
+                        <p class="timeline-institution">FCyT</p>
+                        <ul>
+                            <li>Formación integral en desarrollo de software, bases de datos y arquitectura de sistemas.</li>
+                            <li>Enfoque en resolución de problemas tecnológicos y aplicación de metodologías de trabajo.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2024 - Presente</span>
+                    <div class="timeline-content">
+                        <h3>Formación Autodidacta</h3>
+                        <p class="timeline-institution">Cursos y plataformas online</p>
+                        <ul>
+                            <li>Cursos de programación (Java, Python, HTML, CSS, JavaScript) y herramientas de productividad (Excel).</li>
+                            <li>Idioma: Inglés (Nivel intermedio/básico en constante perfeccionamiento).</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2020 - 2023</span>
+                    <div class="timeline-content">
+                        <h3>Gestión Operativa y Atención al Cliente</h3>
+                        <p class="timeline-institution">Proyecto de empresa escolar y comercio minorista</p>
+                        <ul>
+                            <li>Gestión de inventario y control de mercadería en una empresa escolar con ventas reales (logística, stock y trabajo en equipo).</li>
+                            <li>Atención al público en kiosco y fotocopiadora (turnos rotativos): empatía, comunicación asertiva y resolución de problemas bajo presión.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="about" class="section container about-section">
+            <div class="about-top">
+                <div class="about-image">
+                    <!-- AQUÍ ESTÁ EL CAMBIO DE RUTA: ahora apunta a la carpeta capturas -->
+                    <img src="capturas/avatar.webp" alt="Ilustración de Mariel Roude con cabello rizado y sudadera negra" width="250" height="250" class="avatar" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2>Acerca de mí</h2>
+                    <p>Mi camino en la tecnología no fue lineal. Inicié mis estudios en otra área, pero en el proceso descubrí que mi verdadera vocación estaba en la creación de soluciones lógicas y estructuradas que faciliten la vida de las personas. Hoy curso la Licenciatura en Sistemas de Información y encontré en el desarrollo de interfaces un espacio donde puedo combinar mi capacidad de escucha, mi empatía y mis ganas de aprender a programar para crear productos claros, accesibles y centrados en el usuario.</p>
+                </div>
+            </div>
+            
+            <div class="principles">
+                <div class="principle-card">
+                    <h3>Accesibilidad</h3>
+                    <p>Diseñar para que todas las personas puedan usar la tecnología.</p>
+                </div>
+                <div class="principle-card">
+                    <h3>Curiosidad</h3>
+                    <p>Hacer preguntas, explorar alternativas y aprender de cada intento.</p>
+                </div>
+                <div class="principle-card">
+                    <h3>Colaboración</h3>
+                    <p>Escuchar otras miradas, compartir lo aprendido y construir en conjunto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p class="contact-text">Soy estudiante de Sistemas de Información y estoy dando mis primeros pasos en el mundo de la tecnología. Si querés contactarme para una oportunidad, proyecto o simplemente charlar, escribime.</p>
+                
+                <div class="contact-actions">
+                    <button class="btn-email" onclick="document.getElementById('modal-contacto').showModal()">
+                        maruroude455@gmail.com
+                    </button>
+                    <a href="https://github.com/Mariel-Roude" target="_blank" rel="noopener noreferrer" class="btn-github">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-text">&copy; 2026 Mariel Roude. Diseñado y maquetado con HTML5 y CSS3.</p>
+            <ul class="footer-links">
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- MODAL CASO DE ESTUDIO GENÉRICO -->
+    <dialog id="modal-caso" class="modal">
+        <div class="modal-header">
+            <h2 id="caso-titulo">Caso de Estudio</h2>
+            <form method="dialog">
+                <button class="btn-close" aria-label="Cerrar modal">X</button>
+            </form>
+        </div>
+        <div class="modal-body" id="caso-descripcion"></div>
+    </dialog>
+
+    <!-- MODAL CASO DE ESTUDIO CUBRI SEGUROS -->
+    <dialog id="modal-cubri" class="modal">
+        <div class="modal-header">
+            <h2>Caso de Estudio: Cubri Seguros</h2>
+            <form method="dialog">
+                <button class="btn-close" aria-label="Cerrar modal">X</button>
+            </form>
+        </div>
+        <div class="modal-body">
+            <h3>El Problema</h3>
+            <p>El desafío consistía en construir el front-end de un sistema de contratación de seguros de celulares online. El proceso debía ser claro, evitar errores del usuario y calcular dinámicamente los precios del seguro según las características del equipo.</p>
+            <h3>La Solución</h3>
+            <p>Desarrollé un flujo de 7 pantallas utilizando JavaScript Vanilla para manejar el estado del formulario (guardando los datos del usuario a medida que avanzaba) y Tailwind CSS para la interfaz responsiva.</p>
+            <ul>
+                <li>Validación en tiempo real: El usuario no podía avanzar si el DNI o el email no eran válidos.</li>
+                <li>Cálculo dinámico: Si el celular valía $600.000 y tenía 1 año de antigüedad, el plan Plus se calculaba exactamente en $3.300.</li>
+            </ul>
+            <h3>Resultados y Aprendizajes</h3>
+            <p>Logré un flujo funcional sin recargar la página, demostrando que se puede crear una experiencia de usuario fluida con tecnologías base. Aprendí la importancia de la lógica de estado en JavaScript y cómo un diseño claro reduce la frustración del usuario en procesos de pago.</p>
+        </div>
+    </dialog>
+
+    <!-- MODAL CONTACTO -->
+    <dialog id="modal-contacto" class="modal">
+        <div class="modal-header">
+            <div>
+                <h2>Envíame un mensaje</h2>
+                <p class="modal-subtitle">Me llega directamente a mi bandeja de entrada en maruroude455@gmail.com</p>
+            </div>
+            <form method="dialog">
+                <button class="btn-close" aria-label="Cerrar modal">X</button>
+            </form>
+        </div>
+        <div class="modal-body">
+            <form name="contacto" method="POST" data-netlify="true" class="contact-form">
+                <input type="hidden" name="form-name" content="contacto" />
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Cuéntame sobre tu proyecto o rol..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar mensaje</button>
+            </form>
+        </div>
+    </dialog>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+        });
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        function abrirCasoEstudio(titulo, contenidoHTML) {
+            document.getElementById('caso-titulo').textContent = titulo;
+            document.getElementById('caso-descripcion').innerHTML = contenidoHTML;
+            document.getElementById('modal-caso').showModal();
+        }
+    </script>
+</body>
+</html>
