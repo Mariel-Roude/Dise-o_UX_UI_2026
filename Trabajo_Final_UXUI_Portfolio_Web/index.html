@@ -229,7 +229,6 @@
         <section id="about" class="section container about-section">
             <div class="about-top">
                 <div class="about-image">
-                    <!-- AQUÍ ESTÁ EL CAMBIO DE RUTA: ahora apunta a la carpeta capturas -->
                     <img src="capturas/avatar.webp" alt="Ilustración de Mariel Roude con cabello rizado y sudadera negra" width="250" height="250" class="avatar" loading="lazy">
                 </div>
                 <div class="about-text">
@@ -330,7 +329,8 @@
             </form>
         </div>
         <div class="modal-body">
-            <form name="contacto" method="POST" data-netlify="true" class="contact-form">
+            <!-- Formulario con action="/" para que Netlify detecte el envío y vuelva al inicio -->
+            <form name="contacto" method="POST" data-netlify="true" action="/" class="contact-form">
                 <input type="hidden" name="form-name" content="contacto" />
                 <div class="form-group">
                     <label for="name">Nombre</label>
