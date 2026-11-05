@@ -3,7 +3,7 @@
 Este es mi trabajo final para la materia Diseño UX/UI de la Licenciatura en Sistemas de Información (FCyT).
 
 ## Enlaces del Proyecto
-- **Sitio en vivo (Netlify):** 
+- **Sitio en vivo (Netlify):** [mariel-roude-portfolio.netlify.app]
 - **Repositorio GitHub:** [https://github.com/Mariel-Roude/Dise-o_UX_UI_2026](https://github.com/Mariel-Roude/Dise-o_UX_UI_2026)
 - **Prototipo y Proceso UX (Figma):** [Ver diseño en Figma](https://www.figma.com/design/aKbkcuHAcsRi4Q0nJdB9VE/Portfolio-Web---Roude-Mariel?node-id=0-1&t=32a5RNeKTZhlVAnw-1)
 
@@ -33,7 +33,6 @@ El sitio está desplegado en Netlify y conectado a este repositorio.
 - El formulario de contacto utiliza **Netlify Forms**.
 - Se incluyó una página `404.html` personalizada.
 
-## Capturas del Proyecto
 
 **Vista Desktop:**
 ![Vista Desktop](capturas/desktop.png)
@@ -41,5 +40,5 @@ El sitio está desplegado en Netlify y conectado a este repositorio.
 **Vista Mobile:**
 ![Vista Mobile](capturas/mobile.png)
 
-**Reporte Lighthouse (Mobile):**
+**Reporte Lighthouse:**
 ![Reporte Lighthouse](capturas/lighthouse.png)
